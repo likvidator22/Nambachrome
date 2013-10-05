@@ -1,4 +1,3 @@
-
 var options = {
     "username": Storage.get("username"),
     "password": Storage.get("password"),
@@ -42,7 +41,7 @@ function save() {
         }
 
     }, 'json').error(function(o, type, text) {
-        status('Черт, шибка сервера, попробуйте чуть позже ('+type+': '+text+')', true);
+        status('Черт, ошибка сервера, попробуйте чуть позже ('+type+': '+text+')', true);
     });
 }
 
